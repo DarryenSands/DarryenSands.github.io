@@ -1,6 +1,12 @@
-remote_theme: pages-themes/minimal@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-
 title: [Darryen Sands]
 description: [A website to host Darryen's projects.]
+logo: /assets/img/logo.png
+theme: jekyll-theme-minimal
+google_analytics:
+show_downloads: false
+repository: DarryenSands/DarryenSands.github.io
+plugins:
+    - jekyll-sitemap
+    - jekyll-paginate
+    - jekyll-redirect-from
+    - github-pages
