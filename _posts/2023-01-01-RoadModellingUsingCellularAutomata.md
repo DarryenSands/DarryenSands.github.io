@@ -3,10 +3,12 @@ layout: post
 title: Road Modelling Using Cellular Automata
 author: Darryen Sands
 tags: [Cellular Automata, C, Python, Project, Road Modelling]
-excerpt: <excerpt>
+excerpt separator: <!-- excerpt -->
 ---
 
 This project implements the algorithm found in the 1992 paper <https://hal.science/jpa-00246697v1/document>. The code involves using cellular automata to model traffic flow in a one lane road. In this project, I also add to the model to predict the effects of weather and the effects of speed limits. The repository for this project can be found at [Road Modelling Using Cellular Automata](https://github.com/DarryenSands/MCSC6040-FinalProject).
+
+<!-- excerpt -->
 
 Below are some diagrams that I created to show that I implemented the simulation correctly based on the paper. The darker the rectangle the faster the car is moving. In these images we see that with a low traffic density we have minimal slow-down (traffic jams), but as we increase the density we find that the traffic jam moves somewhat like a wave as time progresses (In the diagram time starts at zero from the top and increases as we go down). 
 
