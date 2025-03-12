@@ -10,12 +10,15 @@
 	<link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
+    <div>
       <header>
 	  </header>
       <h1>{{ page.title }}</h1>
 	<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
 	
 	{{content}}
+	  
+    </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
   </body>
 </html>
