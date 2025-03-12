@@ -10,6 +10,6 @@ Hi, I am Darryen Sands. I have a bachelor's degree in physics and applied mathem
 
 ## Contact Information
 
-My email is darryensands@gmail.com (Preferred)
+My email is <darryensands@gmail.com> (Preferred)
 
 My phone number is (+1) 905-442-5156
