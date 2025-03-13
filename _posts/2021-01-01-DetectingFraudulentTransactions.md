@@ -2,7 +2,7 @@
 layout: post
 title: Detecting Fraudulent Transactions
 author: Darryen Sands
-tags: [Machine Learning, Finance, Python, Tensorflow]
+tags: [Machine Learning, Finance, Python, Tensorflow, Project]
 excerpt_separator: <!-- excerpt -->
 image: <img src="\assets\img\Presentation1NN.png" alt="Neural Network">
 ---

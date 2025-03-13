@@ -197,6 +197,57 @@ video {
     margin: 0 auto;
 }
 
+/* Container for dropdown */
+.dropdown-container {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items: center; /* Center items vertically */
+    width: auto; /* Adjust width based on content */
+}
+
+/* Dropdown list */
+.dropdown {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if there are many tags */
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    gap: 5px; /* Add spacing between tags */
+}
+
+/* Individual dropdown items */
+.dropdown-item {
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #ddd;
+}
+
+/* Active (selected) tag */
+.dropdown-item a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown-item a.active {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Styling for posts */
+.post-item {
+    margin-bottom: 20px;
+}
+
+
 section {
   width:500px;
   float:right;
