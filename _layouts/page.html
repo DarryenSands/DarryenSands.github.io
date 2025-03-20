@@ -8,13 +8,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/assets/css/styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-components-web@latest/dist/material-components-web.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/material-components-web@latest/dist/material-components-web.min.js" defer></script>
+	
+	<script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
   </head>
   <body>
       <header>
 	  </header>
       {{ content }}
 	  
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-  </body>
-</html>
+	  </body>
+    
+	<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    mdc.autoInit();
+  });
+  
+</script>
 

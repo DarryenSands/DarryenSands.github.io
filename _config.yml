@@ -10,3 +10,10 @@ plugins:
     - jekyll-paginate
     - jekyll-redirect-from
     - github-pages
+    
+collections:
+  posts:
+    output: true
+    defaults:
+      values:
+        tags: []
