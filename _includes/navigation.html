@@ -1,5 +1,18 @@
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
-  {% endfor %}
-</nav>
+<header class="mdc-top-app-bar">
+    <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                {% for item in site.data.navigation %}
+                <a href="{{ item.link }}"
+                   class="mdc-button mdc-button--unelevated">
+                    <span class="mdc-button__label">{{ item.name }}</span>
+                </a>
+                {% endfor %}
+        </section>
+
+        <section class="mdc-top-app-bar__section">
+            <md-switch id="theme-switch">
+                <span slot="label">Dark Mode</span>
+            </md-switch>
+        </section>
+    </div>
+</header>

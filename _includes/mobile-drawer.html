@@ -1,0 +1,11 @@
+<aside class="mdc-drawer mdc-drawer--modal">
+	<div class="mdc-drawer__content">
+		<nav class="mdc-list">
+			{% for item in site.data.navigation %}
+			<a class="mdc-list-item" href="{{ item.link | relative_url }}">
+				<span class="mdc-list-item__text">{{ item.name }}</span>
+			</a>
+			{% endfor %}
+		</nav>
+	</div>
+</aside>
