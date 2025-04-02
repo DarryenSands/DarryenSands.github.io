@@ -1,21 +1,29 @@
----
----
-{% include navigation.html %}
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-      <section>
-      {{ content }}
-	  
-      </section>
-	  <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-  </body>
+
+    <!-- Material Design Resources -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+    <!-- MDC Web CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-components-web@14.0.0/dist/material-components-web.min.css">
+
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+
+<body class="mdc-typography">
+    {% include navigation.html %}
+
+    <main class="page-content mdc-top-app-bar--fixed-adjust">
+        {{ content }}
+    </main>
+
+
+    <script src="{{ './bundle.js' | relative_url }}"></script>
+    <script src="{{"/assets/js/mdc-init.js" | relative_url}}" defer></script>
+    <script src="{{"/assets/js/scale.fix.js" | relative_url }}" defer></script>
+</body>
 </html>
