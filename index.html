@@ -3,24 +3,9 @@ layout: default
 title: [Darryen's Homepage]
 logo: /assets/img/logo.png
 ---
-<body>
-    <div class="wrapper">
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+<img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
-
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
-		
-		</div>
-
-	  
 <p> Here's where I host my projects that I have worked on. This website gives potential employers the opportunity to ascertain my experience. </p>
-</body>

@@ -6,26 +6,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-components-web@latest/dist/material-components-web.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/material-components-web@latest/dist/material-components-web.min.js" defer></script>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
 </head>
 
 <body class="mdc-typography">
     {% include navigation.html %}
 
-    <center>
-        <h1>{{ page.title }}</h1>
-        <h2>{{ page.date | date_to_string }} - {{ page.author }}</h2>
-    </center>
+        <center>
+            <h1 style="padding-top: 5rem;">{{ page.title }}</h1>
+            <h2>{{ page.date | date_to_string }} - {{ page.author }}</h2>
+        </center>
 
     {{content}}
 
 
-
-    <script src="{{ './bundle.js' | relative_url }}"></script>
     <script src="{{"/assets/js/mdc-init.js" | relative_url}}" defer></script>
     <script src="{{"/assets/js/scale.fix.js" | relative_url }}" defer></script>
 </body>

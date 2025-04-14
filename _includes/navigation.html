@@ -9,9 +9,9 @@
                 {% endfor %}
         </section>
 
-        <section class="mdc-top-app-bar__section">
-            <md-switch id="theme-switch">
-                <span slot="label">Dark Mode</span>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+            <md-switch>
+                <span id="theme-switch" class="material-icons" onclick="toggleTheme()">dark_mode</span>
             </md-switch>
         </section>
     </div>
