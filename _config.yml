@@ -10,4 +10,4 @@ plugins:
     - jekyll-redirect-from
     - github-pages
     - jektex
-    - d3-rails
+    
