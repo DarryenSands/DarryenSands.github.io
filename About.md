@@ -10,7 +10,7 @@ Hi, I am Darryen Sands. I have a bachelor's degree in physics and applied mathem
 
 ## Contact Information
 
-My email is <darryensands@gmail.com> (Preferred) and my phone number is (+1) 905-442-5156. You can find my resume below.
+My email is <darryensands@gmail.com> (Preferred) and my phone number is (+1) 905-442-5156. You can find my résumé below.
 
 <div class = "iframe-embed-wrapper iframe-embed-responsive-16by9">
 <iframe class = "iframe-embed" src = "/darryen-sands-resume.pdf" title = "My Resume">
