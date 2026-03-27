@@ -14,8 +14,8 @@ This is a project where my group was tasked with detecting fraudulent transactio
 We created a rudimentary model to predict fraudulent transactions, the model can be seen below. We have four different metrics that we analyze: accuracy, area-under-the-curve (AUC), precision, and recall. Our model heavily depends on the penalization on incorrect identifications and reward for correct identifications. We tuned these values to obtain a better model for prediction.
 
 
-<img src="\assets\img\Presentation1NN.png" alt="Neural network" class="center">
+<img src="/assets/img/Presentation1NN.png" alt="Neural network" class="center">
 
 Our model's metrics can be seen below. Our accuracy is relatively low, but AUC and recall are quite high. Precision is also quite low. This model has lots of room for improvement, and we can use the theory from the literature to improve our metrics. 
 
-<img src="\assets\img\ModelMetrics.png" alt="Model metrics" class="center">
+<img src="/assets/img/ModelMetrics.png" alt="Model metrics" class="center">
