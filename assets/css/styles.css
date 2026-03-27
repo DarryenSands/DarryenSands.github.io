@@ -1,0 +1,77 @@
+/* Custom styles - minimal since we're using Tailwind */
+
+/* Paragraph spacing in markdown content */
+main p, .post-content p, div p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+main h2, .post-content h2, div h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+main ul, main ol, .post-content ul, .post-content ol, div ul, div ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+main li, .post-content li, div li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+}
+
+main ul li::marker, .post-content ul li::marker, div ul li::marker {
+    color: #267CB9;
+}
+
+/* Dark mode styles */
+[data-theme="dark"] {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+/* Fix for navbar in dark mode */
+[data-theme="dark"] .bg-gray-800 {
+  background-color: #2d2d2d !important;
+}
+
+/* Link colors in dark mode */
+[data-theme="dark"] a {
+  color: #f5f5f5;
+}
+
+[data-theme="dark"] a:hover {
+  color: #ffffff;
+}
+
+/* Body and text colors in dark mode */
+[data-theme="dark"] body {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+/* Input and form elements in dark mode */
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+  background-color: #2d2d2d;
+  color: #f5f5f5;
+  border-color: #4a4a4a;
+}
+
+/* Placeholder text in dark mode */
+[data-theme="dark"] ::placeholder {
+  color: #a0a0a0;
+}
+
+/* Card backgrounds in dark mode */
+[data-theme="dark"] .bg-white {
+  background-color: #2d2d2d !important;
+}
+
+/* Text colors in cards in dark mode */
+[data-theme="dark"] .text-gray-900,
+[data-theme="dark"] .text-gray-600 {
+  color: #f5f5f5 !important;
+}

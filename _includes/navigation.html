@@ -1,18 +1,49 @@
-<header class="mdc-top-app-bar">
-    <div class="mdc-top-app-bar__row">
-        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                {% for item in site.data.navigation %}
-                <a href="{{ item.link }}"
-                   class="mdc-button mdc-button--unelevated">
-                    <span class="mdc-button__label">{{ item.name }}</span>
-                </a>
-                {% endfor %}
-        </section>
-
-        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
-            <md-switch>
-                <span id="theme-switch" class="material-icons" onclick="toggleTheme()">dark_mode</span>
-            </md-switch>
-        </section>
+<header class="bg-gray-800 text-white flex justify-between items-center px-4 py-2">
+    <div class="flex space-x-4">
+        {% for item in site.data.navigation %}
+        <a href="{{ item.link }}"
+           class="hover:text-gray-300 transition-colors">
+            {{ item.name }}
+        </a>
+        {% endfor %}
+    </div>
+    <div>
+        <button id="theme-toggle" class="hover:text-gray-300 transition-colors focus:outline-none">
+            🌙
+        </button>
     </div>
 </header>
+<script>
+  (function() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+    
+    if (!themeToggle) return;
+    
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      htmlElement.dataset.theme = savedTheme;
+      themeToggle.innerHTML = savedTheme === 'dark' ? '☀️' : '🌙';
+    } else {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+      if (prefersDark.matches) {
+        htmlElement.dataset.theme = 'dark';
+        themeToggle.innerHTML = '☀️';
+      } else {
+        themeToggle.innerHTML = '🌙';
+      }
+    }
+    
+    themeToggle.addEventListener('click', () => {
+      if (htmlElement.dataset.theme === 'dark') {
+        htmlElement.dataset.theme = 'light';
+        localStorage.setItem('theme', 'light');
+        themeToggle.innerHTML = '🌙';
+      } else {
+        htmlElement.dataset.theme = 'dark';
+        localStorage.setItem('theme', 'dark');
+        themeToggle.innerHTML = '☀️';
+      }
+    });
+  })();
+</script>

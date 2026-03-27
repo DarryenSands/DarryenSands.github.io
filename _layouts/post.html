@@ -6,25 +6,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-components-web@latest/dist/material-components-web.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- KaTeX for math rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, { delimiters: [{left: '$$', right: '$$'}, {left: '\\(', right: '\\)'}] });"></script>
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
-<body class="mdc-typography">
+<body class="bg-white text-gray-900 min-h-screen flex flex-col transition-colors duration-200">
     {% include navigation.html %}
 
-        <center>
-            <h1 style="padding-top: 5rem;">{{ page.title }}</h1>
-            <h2>{{ page.date | date_to_string }} - {{ page.author }}</h2>
-        </center>
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold">{{ page.title }}</h1>
+            <h2 class="text-lg text-gray-600">{{ page.date | date_to_string }} - {{ page.author }}</h2>
+        </div>
 
-    {{content}}
-
-
-    <script src="{{"/assets/js/mdc-init.js" | relative_url}}" defer></script>
-    <script src="{{"/assets/js/scale.fix.js" | relative_url }}" defer></script>
+        {{ content }}
+    </div>
 </body>
 
 </html>

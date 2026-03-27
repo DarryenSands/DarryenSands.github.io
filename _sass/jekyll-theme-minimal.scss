@@ -7,62 +7,17 @@
     cursor: pointer;
 }
 
-[data-theme="dark"] {
-    /* Reference palette */
-    --md-ref-palette-primary80: #D0BCFF;
-    --md-ref-palette-primary20: #381E72;
-    /* Add all other reference colors needed */
-    /* System tokens */
-    --md-sys-color-primary: var(--md-ref-palette-primary80);
-    --md-sys-color-on-primary: var(--md-ref-palette-primary20);
-    /* Add all other system tokens */
-    /* Background/surface */
-    --md-sys-color-surface: #1C1B1F;
-    --md-sys-color-on-surface: #E6E1E5;
-    /* Ensure all components use these tokens */
-    background-color: var(--md-sys-color-surface);
-    color: var(--md-sys-color-on-surface);
-}
-
-.mdc-card {
-    border-radius: 12px;
-    background-color: var(--md-sys-color-surface-container-high);
-    color: var(--md-sys-color-on-surface);
-    border: 2px solid var(--md-sys-color-on-surface);
-
-    &__media {
-        border-radius: 12px 12px 0 0;
-        overflow: hidden;
-        position: relative;
-        background-size: cover;
-
-        &-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            display: flex
-        }
-    }
-}
-
+/* Clean, minimal styles - Tailwind handles most styling now */
 body {
-    background-color: var(--md-sys-color-surface);
-    color: var(--md-sys-color-on-surface);
     transition: background-color 0.3s, color 0.3s;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 20px;
-    background-color: var(--md-sys-color-surface);
-    color: var(--md-sys-color-on-surface);
 }
 
 p, ul, ol, table, pre, dl {
     margin: 0 0 20px;
-    background-color: var(--md-sys-color-surface);
-    color: var(--md-sys-color-on-surface);
 }
 
 h1, h2, h3 {
@@ -71,16 +26,6 @@ h1, h2, h3 {
 
 h1 {
     font-size: 28px;
-}
-
-h2 {
-    background-color: var(--md-sys-color-surface);
-    color: var(--md-sys-color-on-surface);
-}
-
-h3, h4, h5, h6 {
-    background-color: var(--md-sys-color-surface);
-    color: var(--md-sys-color-on-surface);
 }
 
 a {
@@ -246,33 +191,13 @@ video {
     margin: 0 auto;
 }
 
-/* Material 3 Card Styling */
+/* Custom project grid styling */
 .project-grid {
     display: grid;
-    gap: 2.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     padding: 16px;
 }
-
-.mdc-card__media--16-9 {
-    aspect-ratio: 16/9;
-    display: flex
-}
-
-.mdc-card__media-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-.mdc-card__primary-action {
-    display: flex;
-    flex-direction: column;
-}
-
 
 .tag-filter {
     list-style: none;
@@ -282,7 +207,7 @@ video {
     .tag-item {
         display: inline-block;
         margin-right: 0.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
 
         a {
             cursor: pointer;
