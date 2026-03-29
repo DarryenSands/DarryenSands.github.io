@@ -6,7 +6,7 @@ permalink: /About
 
 ## About Me
 
-Hi, I am Darryen Sands. I have a bachelor's degree in physics and applied mathematics as well as a master's degree in modelling and computational science. Both of these degrees are from [Ontario Tech University](https://ontariotechu.ca/). I am currently pursuing a graduate certificate in Artificial Intelligence from [Durham College] (https://durhamcollege.ca/). I am interested in many areas such as quantum information, quantitative finance, Markov chain theory, radiation physics, and healthcare. 
+Hi, I am Darryen Sands. I have a bachelor's degree in physics and applied mathematics as well as a master's degree in modelling and computational science. Both of these degrees are from [Ontario Tech University](https://ontariotechu.ca/). I am currently pursuing a graduate certificate in Artificial Intelligence from [Durham College](https://durhamcollege.ca/). I am interested in many areas such as quantum information, quantitative finance, Markov chain theory, radiation physics, and healthcare. 
 
 ## Contact Information
 
