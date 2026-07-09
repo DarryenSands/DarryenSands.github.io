@@ -7,6 +7,6 @@ excerpt_separator: <!-- excerpt -->
 image: /assets/img/Calculator.png
 ---
 
-Created a calculator using Julia, React and SQLite to learn about all of them in one-fell swoop. Performs basic calculations and includes error handling. Runs the backend on a Render server and the front-end is only React. Use it below.
+Created a calculator using Julia, React and SQLite to learn about all of them in one-fell swoop. Performs basic calculations and includes error handling. Runs the backend on a Render server and the front-end is only React. Use it below (may be a bit slow on cold start but give it a minute).
 
 <iframe src="/calculator/index.html" width="100%" height="800px" style="border:none; border-radius: 20px;"></iframe>
